@@ -1,0 +1,1382 @@
+﻿
+
+
+/************************************Game menu style*******************************/
+/*font for the page title*/
+@font-face 
+{
+    font-family: 'choco';
+src: url('../font/CHOCRG_.TTF') format('truetype');
+font-family: 'Alef';
+src: url('../font/Alef-Regular.ttf') format('truetype');
+}
+body
+{  
+    direction:rtl;
+  margin:0;
+  padding:0;
+    background-color:Black;
+    font-family:Alef;
+    font-weight:normal;
+}
+p
+{
+    margin:0px;
+    direction:rtl;
+}
+a
+{
+     margin:0px!important;
+     padding:0px!important;
+}
+/** עיצוב דף הבית **/
+.headerHomePage
+{
+    background-image:url(../img/homepage/top.png);
+    height:47px;
+    background-repeat:repeat-x;
+    width:100%;
+    overflow:hidden;
+    padding:0px;
+    margin:0px;
+    background-position: center top;
+}
+.HompageMiddle
+{
+    background-image:url(../img/homepage/middle.png);
+    background-position: center top;
+    min-height:580px;
+    background-color:#d4b694;
+    width:100%;
+    position:relative;
+    margin:0px!important;
+    padding:0px;
+}
+.logo
+{
+    background-image:url(../img/homepage/blank.png);
+}
+#logo_holder
+{
+    height:192px;
+}
+#buttonDiv
+{
+  /*  margin-top:300px;*/
+  
+    margin-right:auto;
+    margin-left:auto;
+    height:93px;
+    width:1000px;
+    position:relative;
+    margin-top:0px!important;
+   padding-top:0px!important;
+    
+}
+.one_3_colums
+{
+    float:right;
+    width:33.33%;
+    position:relative;
+    height:93px;
+    text-align:center;
+    margin-top:0px!important;
+   padding-top:0px!important;
+}
+.Homebutton
+{
+    background-image:url(../img/homepage/button_bg.png);
+    background-repeat:no-repeat;
+    background-position:center top;
+    height:93px;
+    width:165px;
+   margin-right:auto;
+   margin-left:auto;
+   padding-right:10px;
+   padding-left:10px;
+   margin-top:0px!important;
+   padding-top:0px!important;
+   float:none;
+    color:#09AEA5;
+}
+.Homebutton:hover
+{
+     background-image:url(../img/homepage/button_bg_h.png);
+    background-repeat:no-repeat;
+    background-position:center top;
+     color:#c7e8be;
+}
+.Homebutton p
+{
+    font-size:31px;
+    width:100px;
+    margin-right:auto;
+    margin-left:auto;
+    position:relative;
+    line-height:30px;
+    margin-top:0px;
+    padding-top:15px;
+   
+}
+.Homebutton a
+{
+    text-decoration:none;
+    display:block;
+    color:#09AEA5;
+}
+.Homebutton a:hover
+{
+    text-decoration:none;
+    display:block;
+    color:#c7e8be;
+}
+#TeacherEnter
+{
+    float:left;
+}
+#ChildEnter
+{
+    float:right;
+}
+/********************** עיצוב פוטר דף הבית*********************/
+.HomepageFooter
+{
+    background-image:url(../img/homepage/footer.png);
+    min-height:66px;
+    background-repeat:repeat-x;
+    background-position:center top;
+    width:100%;
+    background-color:#FF6F42;
+    height:100%;
+    text-align:center;
+    margin-top:0px;
+    padding-top:0px;
+}
+.HomepageFooter div
+{
+    width:1000px;
+    margin-right:auto;
+    margin-left:auto;
+    min-height:66px;
+    margin-top:0px;
+    padding-top:20px;
+    
+}
+.HomepageFooter div p
+{
+   
+    margin-top:0px;
+    margin-bottom:0px;
+    line-height:20px;
+    color:#c7e8be;
+    font-family: Alef;
+    font-size:14px;
+}
+/**************************סוף לעיצוב דף הבית*************************/
+/**********************עיצוב דף ניהול ראשי**************************/
+.headerInnerPage
+{
+    background-image:url(../img/inner-page/header.png);
+    height:109px;
+    width:100%;
+    background-repeat:repeat-x;
+    background-position:center top;
+    margin:0px;
+    padding-right:20px;
+    padding-left:10px;
+    border-bottom: 3px solid #159694;
+    overflow:hidden;
+}
+#middleHeader
+{
+    width:1000px;
+    margin: 0 auto;
+}
+#logo-holder
+{
+    float:right;
+   width:10%;
+   
+    margin:0px;
+    padding:0px;
+   
+}
+#header_label
+{
+    padding-right:20px;
+    width:45%;
+    float:right;
+    padding-top:50px;
+     margin:0px;
+}
+
+#Label1
+{
+    font-family:Alef;
+    font-size:28px;
+     margin:0px;
+     color:Black;
+     float:right;
+}
+/**********************menu style in inner page***************************/
+.menuhHolder
+{
+    width:24%;
+    height:105px;
+    display:inline;
+     margin:0px;
+     padding-top:20px;
+     padding-left:0px;
+     padding-bottom:0px;
+     margin-bottom:0px;
+    
+}
+.menuhHolder ul
+{
+    list-style:none;
+    float:left;
+     padding-top:0px;
+     height:20px;
+    display:inline;
+    margin:5px auto 0px auto;
+    padding:0px!important;
+    -webkit-padding-start:none;
+    
+    
+}
+.menuhHolder ul li img
+{
+    margin-top:-5px;
+}
+
+.menuhHolder ul li
+{
+    display:block;
+    height:20px;
+    line-height:30px;
+    float:right;
+    padding-left:15px;
+    padding-right:15px;
+    text-align:center;
+    text-decoration:none;
+    font-size:20px;
+    border-left: 2px solid #C7E8BE;
+    color:Black;
+}
+.menuhHolder ul li a
+{
+    display:block;
+    text-decoration:none;
+    color:Black;
+}
+.menuhHolder ul li a:hover
+{
+    color:#C6E7BE;
+}
+
+.thisPage
+{
+      color:#C6E7BE!important;
+}
+/****סיום תפריט עליון פנימי***/
+#searchPlace
+{
+    width:200px;
+    height:35px;
+    margin-top:40px;
+    background-image:url(../img/inner-page/nihul_games/search.png);
+    background-repeat:no-repeat;
+    background-position:left top;
+    float:left;
+    text-align:left;
+    position:relative;
+}
+#searchBTN
+{
+    width:20px;
+    height:20px;
+    float:right;
+    background-color:transparent;
+    
+}
+#searchTXT
+{
+    width:170px;
+    height:20px;
+    float:right;
+      background-color:transparent;
+      border:none;
+}
+.InnerpageMiddle
+{
+    background-color:#d4b694;
+    min-height:500px;
+}
+/**BreadCrumbs**/
+.InnerpageMiddle .BreadCrumbs
+{
+    text-align:right;
+    margin: 0 auto;
+    direction:rtl;
+    width:1000px;
+    padding-right:40px;
+    padding-top:5px;
+    font-family:Alef;
+    font-size:12px;
+    color:#89697a;
+}
+.InnerpageMiddle p a
+{
+    text-decoration:underline;
+    color:#89697a;
+     font-size:12px;
+}
+.InnerpageMiddle p a:hover
+{
+    text-decoration:none;
+    color:#159694;
+}
+
+/*********************סיום תפריט פירורי הלחם**********************/
+
+.middlePage
+{
+    width:1000px;
+    margin: 0 auto;
+}
+.clear
+{
+    height:0px;
+    margin:0px;
+}
+#HeadTitle
+{
+    background-color:#159694;
+    height:40px;
+    text-align:center;
+    line-height:40px;
+    border-bottom: 3px solid #89697a;
+    margin-top:40px;
+}
+#mainTitle
+{
+    width:1000px;
+    margin: 0 auto;
+    
+}
+
+#mainTitle .colums_right p
+{
+     border-left: 2px solid #89697a;
+    border-right:2px solid #C7E8BE;
+}
+
+#mainTitle .colums_left p
+{
+   border-left: 2px solid #C7E8BE;
+    border-right:2px solid #89697a;  
+}
+#mainTitle p
+{
+    text-align:center;
+   
+    color:#c7e8be;
+}
+#mainTitle p:hover
+{
+    background-color:#c7e8be;
+    color:#159694;
+}
+#mainTitle p a
+{
+    font-size:30px;
+    text-decoration:none;
+    color:#c7e8be;
+    line-height:40px;
+    display:block;
+    height:40px;
+}
+#mainTitle p a:hover
+{
+    font-size:30px;
+   color:#159694;
+     line-height:40px;
+      background-color:#c7e8be;
+}
+/***********************חלק שמאלי בדף ניהול ראשי***********************/
+.right-side-div
+{
+    display:block;
+    width:100%;
+    min-height:350px;
+}
+.nihulButtom
+{
+    background-image:url(../img/inner-page/big-btn.png);
+    height:93px;
+    width:373px;
+    display:block;
+    margin-top:20px;
+   
+    margin-right:auto;
+    margin-left:auto;
+}
+.nihulButtom .holding-box
+{
+    height:80px;
+    padding-top:15px;
+    padding-right:15px;
+}
+
+.nihulButtom .holding-box .colums_right
+{
+   
+    width:30%;
+}
+
+.nihulButtom .holding-box .colums_left
+{
+    
+    width:70%;
+    
+    line-height:60px;
+}
+.nihulButtom a
+{
+    color:black;
+    font-size:22px;
+}
+.nihulButtom a:hover
+{
+    color:#159694;
+    font-size:24px!important;
+}
+/*************************צד ימיני בדף ניהול ראשי***************************/
+.newGameBtn
+{
+    background-image:url(../img/inner-page/newGameBtn.png);
+    background-repeat:no-repeat;
+    background-position:center top;
+    height:41px;
+    width:373px;
+    font-size:20px;
+    margin: 20px auto 0px auto;
+    text-align:center;
+    line-height:40px;
+   
+}
+.gamesOptionsType
+{
+    background-color:#C7E8BE;
+    height:80px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 3px auto 0 auto;
+    width:370px;
+    padding-top:5px;
+}
+.gamesOptionsType .one_3_colums
+{
+    height:100%;
+    color:#159694;
+    font-size:16px;
+}
+.EditGame
+{
+    background-image:url(../img/inner-page/EditGameBtn.png);
+    background-repeat:no-repeat;
+    background-position:center top;
+    height:41px;
+    width:373px;
+    font-size:20px;
+    margin: 5px auto 0px auto;
+    text-align:center;
+    line-height:40px;
+}
+.gamesOptionsEdit 
+{
+    width:370px;
+    margin: 3px auto 0px auto;
+    background-color:#C7E8BE;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height:140px;
+    padding-top:1px;
+}
+.game-preview-nihul-page
+{
+   width:95px;
+   height:65px;
+   background-image:url(../img/inner-page/roundRac.png);
+   background-repeat:no-repeat;
+   margin: 3px auto;
+   display:block;
+   float:none;
+   overflow:hidden;
+}
+/**************************פוטר דף פנימי*************************/
+
+footer
+{
+    clear:both;
+}
+.InnerpageFooter
+{
+    /*background-image:url(../img/homepage/footer.png);*/
+    min-height:66px;
+    background-repeat:repeat-x;
+    background-position:center top;
+    width:100%;
+    background-color:#FF6F42;
+    height:100px;
+    text-align:center;
+    margin-top:0px;
+    padding-top:0px;
+    border-top: 3px solid #89697a;
+    clear:both;
+}
+.InnerpageFooter div
+{
+    width:1000px;
+    margin-right:auto;
+    margin-left:auto;
+    min-height:66px;
+    margin-top:0px;
+    padding-top:20px;
+    
+}
+.InnerpageFooter div p
+{
+   
+    margin-top:0px;
+    margin-bottom:0px;
+    line-height:20px;
+    color:#c7e8be;
+    font-family: Alef;
+    font-size:14px;
+}
+/******************סוף עיצוב דף ניהול ראשי*************************/
+
+/*************** התחלת ניהול משחקים*****************/
+
+#newGameBTN
+{
+    float:right;
+    background-color:#c7e8be;
+    height:40px;
+    width:203px;
+   padding: 1px 1px 1px 3px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+     float:right;
+     margin-right:20px;
+     font-size:20px;
+}
+
+#newGameBTN a
+{
+    display:block;
+    height:38px;
+    width:100%;
+     background-color:#c7e8be;
+     border:1px solid #FF6F42;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration:none;
+    text-align:center;
+    color:#159694;
+    line-height:38px;
+}
+#newGameBTN a:hover
+{
+    background-color:#159694;
+    color:#c7e8be;
+}
+.miyunTypeGameTitle
+{
+    background-color:#159694;
+    width:100%;
+    height:20px;
+    border-bottom:2px solid #89697a;
+    margin-top:20px;
+}
+
+.miyunTypeGameTitle p
+{
+    color:#c7e8be;
+    width:1000px;
+    text-align:right;
+    padding-right:20px;
+    margin: 0 auto;
+}
+
+#GameType
+{
+    width:1000px;
+    margin: 0 auto;
+    height:100px;
+}
+
+#GameType .holding-box
+{
+  
+}
+.one_of_4_colum
+{
+    height:100%;
+    float:right;
+    width:25%;
+    display:inline-block;
+    padding-top:15px;
+}
+.one_of_4_colum img
+{
+    margin: 0 auto;
+}
+.imageholder
+{
+     margin: 0 auto;
+     width:120px;
+     background-color:#c7e8be;
+     border: 1px solid #89697a;
+     height:100%;
+     text-align:center;
+     padding-top:10px;
+     color:#159694;
+}
+.imageholder:hover
+{
+    background-color:#FF6F42;
+    color:#c7e8be!important;
+}
+.chosenBlock
+{
+    background-color:#FF6F42!important;
+}
+.chosenBlock p
+{
+    color:#c7e8be!important;
+}
+.imageholder p 
+{
+   /*color:#159694;*/
+}
+.one_of_7_colum
+{
+    float:right;
+    width:14.285%;
+}
+#GameCategory
+{
+    width:1000px;
+    margin:0 auto;
+    padding-top:10px;
+    height:80px;
+    display:block;
+    position:relative;
+}
+
+.one_of_7_colum .imageholder
+{
+    background-color:transparent;
+    text-align:center;
+    border:none;
+    height:39px;
+     color:#c7e8be;
+}
+
+.boxCategory
+{
+    color:#c7e8be;
+}
+.boxCategory:hover
+{
+    color:#FF6F42;
+}
+
+.boxCategory
+{
+    text-align:center;
+}
+.one_of_7_colum .boxCategory p
+{
+    width:100%;
+    text-align:center;
+    margin:0px;
+    padding:0px;
+}
+.subCategory
+{
+    background-color:#c7e8be;
+    color:#159694;
+    width:100%;
+    height:30px;
+}
+
+#resultTitle
+{
+    height:30px;
+    font-size:25px;
+    line-height:30px;
+    margin:0;
+    display:block;
+    position:relative;
+}
+#result
+{
+    width:1000px;
+    margin:0 auto;
+    height:auto;
+    padding-top:10px;
+}
+.gameplace
+{
+    height:100px;
+    width:120px;
+    float:right;
+    margin:10px;
+    text-align:center;
+}
+
+
+
+/*************** סוף ניהול משחקים*****************/
+
+/*********************עיצוב דפי נגישות****************/
+
+.ChooseType
+{
+    background-color:#159694;
+    height:125px;
+    width:100%;
+    border-top: 3px solid #89697a;
+    margin-top:5px;
+}
+.ChooseType .holding-box
+{
+    width:1000px;
+    height:125px;
+    margin:0 auto;
+}
+.ChooseType .holding-box .one_3_colums
+{
+    height:100%;
+}
+.gameTypeBox
+{
+    height:100%;
+    margin:0 auto;
+    width:200px;
+    text-align:center;
+    color:#c7e8be;
+    font-size:20px;
+}
+.gameTypeBox:hover
+{
+    background-color:#c7e8be;
+    color:#159694;
+    cursor:pointer;
+}
+
+#myDiv
+{
+    min-height:650px;
+    background-repeat:repeat-x;
+    background-attachment:scroll;
+}
+
+.hagdarot_container
+{
+    background-color:#D4B694;
+    height:650px;
+    background-repeat:repeat-x;
+    background-attachment:scroll;
+}
+/*********************הגדרות נגישות לאיפה אני****************/
+.content_Hagdarot
+{
+    background-color:#c7e8be;
+    height:50px;
+    width:100%;
+    border-top: 2px solid #89697a;
+    margin-top:-2px;
+}
+.content_Hagdarot .holding-box
+{
+    width:1000px; 
+    margin:20px auto 30px auto;
+    height:10px;
+    
+}
+.content_Hagdarot .holding-box p
+{
+    padding-right:20px;
+    color:#159694;
+}
+
+.preview_game
+{
+    height:407px;
+    width:100%;   
+    background-color:Black;
+    margin-right:20px;
+    border-right: 2px solid #c7e8be;
+    border-bottom: 2px solid #c7e8be;
+    margin-top:2px;
+    position:relative;
+}
+p[onclick]
+{
+    cursor:pointer;
+}
+.myPreviewElmo
+{
+    height:100px;
+    width:100px;
+      -moz-animation: rotateRight 0.5s linear 0s infinite alternate; 
+    -webkit-animation: rotateRight 0.5s linear 0s infinite alternate; 
+}
+.backgroun_n_character
+{
+    min-height:420px;
+}
+.hagdarot_game1
+{
+     min-height:500px;
+}
+.hagdarot_game1 <.holding-box
+{
+    min-height:500px;
+    height:auto;
+}
+h3
+{
+    font-family:Alef!important;
+}
+.ui-state-active
+{
+    background:none!important;
+/*    background-color:#c7e8be!important;*/
+}
+.ui-state-default
+{
+    background:none!important;
+    background-color:#c7e8be!important;
+}
+.ui-widget-content
+{
+     background:none!important;
+     background-color:#D4B694!important;
+     height:20px;
+    
+}
+.contentbox
+{
+    width:420px;
+    height:20px;
+}
+.contentSize
+{
+    width:180px;
+    height:20px;
+    float:left;
+}
+.contentSize .holding-box
+{
+    width:100%;
+    height:20px;
+    margin:0;
+}
+.contentSize .holding-box .one_of_4_colum
+{
+    height:20px;
+    margin: 0;
+    padding:0;
+    text-align:center;
+}
+.contentSize .holding-box .one_of_4_colum p
+{
+    line-height:25px;
+    background-color:#159694;
+    margin-right:2px;
+    height:25px;
+    color:#c7e8be;
+    text-align:center;
+    padding:0px;
+    width:90%;
+}
+.contentSize .holding-box .one_of_4_colum p:hover
+{
+     background-color:#c7e8be;
+     color:#159694;
+}
+.randomaly
+{
+    width:200px!important;
+}
+.speed
+{ 
+    background-image: url(../img/negishut/size.png);
+    height:50px;
+    background-repeat:no-repeat;
+    background-position:center bottom;
+    float:left;
+    width:300px;
+}
+.speed .holding-box
+{
+    width:100%;
+    height:20px;
+    margin:0;
+}
+.speed .holding-box .one_of_4_colum
+{
+    height:20px;
+    margin: 0;
+    padding:0;
+    text-align:center;
+}
+.speed .holding-box .one_of_4_colum p
+{
+    line-height:25px;
+   
+    margin-right:2px;
+    height:25px;
+    color:#159694;
+     text-align:center;
+     padding:0px;
+    
+}
+.contentcolor
+{
+    float:left;
+    width:30px;
+    height:20px;
+}
+.ui-accordion-header-active
+{
+    background-color:#FF6F42!important;
+    color:#c7e8be!important;
+}
+
+.music-box
+{
+    width:1000px;
+    height:150px;
+    margin: 0 auto;
+}
+
+/**************עיצוב הגדרות המוזיקה**************/
+.musicDefinitions
+{
+    height:150px;
+    width:100%;
+   
+}
+.rightDefinitions_music
+{
+    height:100px;
+    width:460px;
+    float:right;
+  
+}
+.rightDefinitions_music .holding-box
+{
+     height:100%;
+     width:460px;
+      margin:0;
+     
+}
+.leftDefinitions_music
+{
+     height:100px;
+    width:392px;
+    float:right;
+    margin-right:100px;
+  
+}
+.leftDefinitions_music .holding-box
+{
+    height:100%;
+    width:392px;
+    margin:0;
+    
+}
+
+.leftDefinitions_music .holding-box .colums_right
+{
+    height:100%;
+}
+.leftDefinitions_music .holding-box .colums_left
+{
+    height:100%;
+}
+
+.MusicTitle
+{
+    margin-top:20px;
+    height:30px;
+    background-color: #159694;
+  
+}
+.MusicTitle .music-box
+{
+    height:30px;
+  
+}
+.MusicTitle .holding-box p
+{
+    color:#c7e8be;
+    float:right;
+}
+.MusicTitle .one_3_colums
+{
+    height:30px;
+}
+.MusicTitle .holding-box
+{
+    height:30px;
+    margin:0;
+}
+.MusicTitle .rightDefinitions_music
+{
+    height:30px;
+}
+.MusicTitle .leftDefinitions_music
+{
+    height:30px;
+}
+.MusicTitle .rightDefinitions_music input
+{
+    float:right;
+}
+.radioServer
+{
+    float:right;
+    margin-right:20px;
+    width: 100%;
+text-align: right;
+
+}
+
+.radioServer:nth-child(1)
+{
+     margin-top:10px;
+}
+.dropDownMusic
+{
+    margin-top:10px;
+    width:91px;
+    height:21px;
+    float: right;
+margin-right: 20px;
+}
+.ButtonsMusic
+{
+        background-color:#FF6F42;
+        color:#c7e8be;
+        -webkit-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+        width:75px;
+        height:23px;
+         margin-top:10px;
+         float: right;
+margin-right: 20px;
+cursor:pointer;
+}
+.ButtonsMusic:hover
+{
+     background-color:#c7e8be;
+     color:#FF6F42;
+     cursor:pointer;
+}
+/*******************עיצוב דף משחק******************/
+#container
+{
+    width:100%;
+    min-height:600px; 
+   
+}
+/*style of main menu*/
+.StarsBar
+{
+    height:700px;
+    width:70px;
+    float:right;
+    background-color:#1c1c1c;
+   z-index:1000px;
+   padding-top:60px;
+}
+.StarsBar img
+{
+    margin-bottom:10px;
+}
+
+/*style of closed menu in Game screen*/
+.closedMenu
+{
+    z-index: 900;
+       background-image: url(../img/game_btn2.png);
+        
+        background-position:center;
+        background-repeat:no-repeat;
+       margin-top:0px;
+        background-color:#333333;
+        height:30px;
+        width:93%;
+        -webkit-border-radius: 0px 0px 10px 10px;
+        border-radius: 0px 0px 10px 10px;
+        margin-right:75px;
+        margin-left:auto;
+       
+       /** float:right;**/
+ }
+/*style of opened menu*/ 
+ .openMenu
+ {
+      z-index: 900;
+      background-image: url(../img/game_btn3.png);
+        background-color:#333333;
+        height:130px;
+        background-position:center bottom; 
+        background-repeat:no-repeat;
+         width:93%;
+        margin-right:75px;
+        margin-left:auto;
+        -webkit-border-radius: 0px 0px 10px 10px;
+        border-radius: 0px 0px 10px 10px;
+ }
+ /*hide MENU OPTIONS*/
+ .menuOptionsoff
+ {
+     display:none;
+     }   
+ /*show MENU OPTIONS*/
+  .menuOptionson
+ {
+     display:block   
+  }
+  .logo
+  {
+      float:right;
+      width:10%;
+      }
+  
+  .logo img
+  {
+      margin-right:10px;
+      margin-top:20px;
+  }
+  .Gametitle
+  {
+      float:right;
+      width:50%;
+  }
+  
+  .Gametitle h1
+  {
+      font-size:28px;
+      color:#fefefe;
+      font-family:choco; 
+      margin-right:10px;
+      margin-top:50px; 
+      font-style:normal;
+font-weight:normal;
+color:white;
+   }
+   .Gametitle h1 #Label1
+   {
+       color:White;
+       font-family:choco;
+        font-style:normal;
+        font-weight:normal;
+   }
+   .buttons_row
+   {
+       padding: 30px 0 0 0;
+        height:57px;
+       
+       }
+   
+  .musicMashovBtn
+  {
+       background-image: url(../img/music2.png);
+        background-position:center center;
+        background-repeat:no-repeat;
+        width:10%;
+        height:57px;
+        float:right;
+      
+  }
+  .musicMashovBtn:hover
+  {
+   background-image: url(../img/music2h.png);
+        background-position:center center;
+        background-repeat:no-repeat;
+      }
+  
+.musicBackBtn
+{
+     background-image: url(../img/music1.png);
+        background-position:center center;
+        background-repeat:no-repeat;
+         width:10%;
+        height:57px;
+        float:right;
+    }
+    
+    .musicBackBtn:hover
+{
+     background-image: url(../img/music1h.png);
+        background-position:center center;
+        background-repeat:no-repeat;
+}
+    
+    .fullScreenBtn
+    {
+         background-image: url(../img/full_screen.png);
+        float:right;
+         width:10%;
+          height:57px;
+         background-position:center center;
+        background-repeat:no-repeat;
+        }
+         .fullScreenBtn:hover
+{
+     background-image: url(../img/full_screen-h.png);
+        background-position:center center;
+        background-repeat:no-repeat;
+}   
+
+*:-webkit-full-screen
+{
+    background-color:Black;
+}
+        
+    .SettingsBtn
+    {
+        background-image: url(../img/settings.png);
+     background-position:center center;
+     background-repeat:no-repeat;
+     height:57px;
+     float:right;
+     width:10%;
+    }
+    
+     .SettingsBtn:hover
+{
+     background-image: url(../img/settingsh.png);
+        background-position:center center;
+        background-repeat:no-repeat;
+}   
+
+.SubMenuSettings
+{
+  display:none;  
+  width:170px;
+  margin-top:70px;
+  margin-right:-100px;
+  height:150px;
+    }
+    
+    .SubMenuSettings li
+    {
+     display:block;
+     width:170px;
+     height:40px;   
+     margin:0px!important;
+     padding:0px!important;
+     list-style:none;
+     line-height:20px;
+     background-color:Gray;
+     float:right;
+     text-indent:10px;
+    }
+    .colums_right
+    {
+        float:right;
+        width:50%;
+    }
+    .colums_left
+    {
+       float:right;
+        width:50%; 
+    }
+    .colums_right_li
+    {
+        width:70%!important;
+    }
+    .colums_left_li
+    {
+        width:30%!important;
+    }
+    .holding-box
+    {
+      position:relative;  
+    }
+    /*********************Game screen style*********************/
+  /*circle style in 2 game*/
+   #circle
+   {
+ top:50px; 
+   }
+  
+ /*game style*/
+
+  /*rotate animation*/
+  .movingObgect
+  { 
+   height:200px;
+   width:200px;
+    -moz-animation: rotateRight 0.5s linear 0s infinite alternate; 
+    -webkit-animation: rotateRight 0.5s linear 0s infinite alternate; 
+}
+
+@-moz-keyframes rotateRight{
+    0%{ -moz-transform:rotate(-20deg); -moz-transform-origin:50% 50%; }
+    100%{ -moz-transform:rotate(20deg); }
+}
+
+@-webkit-keyframes rotateRight{
+    0%{ -webkit-transform:rotate(-20deg); -webkit-transform-origin:50% 50%; }
+    100%{ -webkit-transform:rotate(20deg); }
+}
+ /*my symbol style*/
+ 
+ .firstglow
+ {
+      height:100%;
+ }
+   #cat
+{  
+    -webkit-animation-duration: 0.3s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-name: "blink";
+        -webkit-animation-direction:alternate;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: 0s;
+        
+   /* -webkit-animation: blink 0.3s linear 0s infinite alternate;  */
+}
+
+@-webkit-keyframes blink{
+    0% {-webkit-filter: drop-shadow(3px 3px 40px rgba(255,251,0,1)); }
+    100% { -webkit-filter: drop-shadow(0px 0px 40px rgba(255,251,0,0.5)); } 
+}
+        
+
+.animationonplace{ 
+   /* -moz-animation:.8s rotateRight infinite linear;*/
+    -moz-animation: rotateRightfull 0.8s linear 0s infinite alternate; 
+    -webkit-animation: rotateRightfull 0.8s linear 0s infinite alternate; 
+    /*-webkit-animation:.8s rotateRight infinite linear;*/ 
+}
+
+@-moz-keyframes rotateRightfull{
+    0%{ -moz-transform:rotate(0deg); -moz-transform-origin:20% 40%; }
+    100%{ -moz-transform:rotate(360deg); }
+}
+@-webkit-keyframes rotateRightfull{
+    0%{ -webkit-transform:rotate(0deg); -webkit-transform-origin:20% 40%; }
+    100%{ -webkit-transform:rotate(360deg); }
+}     

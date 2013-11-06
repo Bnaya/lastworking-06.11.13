@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html><head>
+<title>ניסיון_נוסף</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <link href="style/StyleSheet.css" rel="stylesheet" type="text/css" />
+   
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+
+    //Timer 1
+    var timerid = null;
+    //Timer 2
+    var myJson = [{ "gameName": "myFirstGame", "imgList": [{ "pics": "baby-laughing-icon.png" }, { "pics": "ballons.png" }, { "pics": "camel_7-929px.png" }, { "pics": "house-icon.png" }, { "pics": "Teddy-Bear-XL-psd34058.png"}], "DateOfMaking": "21/07/13", "Maker": "shany" },
+
+{ "gameName": "myFirstGame", "imgList": [{ "pics": "baby-laughing-icon.png" }, { "pics": "ballons.png" }, { "pics": "camel_7-929px.png" }, { "pics": "house-icon.png" }, { "pics": "Teddy-Bear-XL-psd34058.png"}], "DateOfMaking": "21/07/13", "Maker": "michal" },
+
+{ "gameName": "myFirstGame", "imgList": [{ "pics": "baby-laughing-icon.png" }, { "pics": "ballons.png" }, { "pics": "camel_7-929px.png" }, { "pics": "house-icon.png" }, { "pics": "Teddy-Bear-XL-psd34058.png"}], "DateOfMaking": "21/07/13", "Maker": "anaya"}];
+
+    var symbols2 = new Array;
+   // alert(game1);
+    //  game1 = myJson[0]
+    var num = 0;
+    for (var key in myJson[0].imgList) {
+        
+    var tring = myJson[0].imgList[num].pics;
+    symbols2[num] = tring;
+    num = num + 1;
+     //   alert(tring);
+}
+
+
+function openmenu() {
+
+    $("#Uppermenu").toggleClass('openMenu closedMenu');
+    $("#menuHeader").toggleClass('menuOptionson menuOptionsoff')
+}
+   
+    
+    var restartTimer = null;
+ //   var symbols = new Array("baby-laughing-icon.png", "ballons.png", "camel_7-929px.png", "house - icon.png", "Teddy-Bear-XL-psd34058.png");
+    var symbolNum = 0;
+
+
+    //restarting game.
+    function restarting() {
+        document.getElementById('cat').style.left = 40 + 'px';
+        document.getElementById('cat').style.top = 380 + 'px';
+        clearInterval(restartTimer);
+
+        return;
+    }
+
+    function move() {
+
+        var currentLeft = parseInt(document.getElementById('cat').style.left);
+        if (currentLeft > window.innerWidth) {
+            document.getElementById('cat').style.left = parseInt(document.getElementById('cat').style.left) + 30 + "px";
+            clearInterval(timerid);
+            symbolNum = symbolNum + 1;
+            if (symbolNum == 5) {
+                symbolNum = 0;
+            }
+            document.getElementById('cat').src = "symbols/" + symbols2[symbolNum];
+
+            restartTimer = setInterval("restarting()", 3000);
+
+            //  document.getElementById('cat').style.left = 5 + 'px';
+            //document.getElementById('cat').style.top = 420 + 'px';
+            // clearInterval(timerid);
+            // return;
+
+        }
+        else {
+
+            document.getElementById('cat').style.left = currentLeft + 3 + 'px';
+
+            document.getElementById('cat').style.top =
+    parseInt(document.getElementById('cat').style.top) + -1 + 'px';
+
+
+        }
+    }
+
+
+    window.onload = function () {
+        
+        
+
+        document.getElementById('cat').src = "symbols/" + symbols2[symbolNum];
+
+        //stat moving on click
+        document.getElementById('cat').onclick = function () {
+           
+            timerid = null
+            var currentLeft = parseInt(document.getElementById('cat').style.left);
+            var currentTop = parseInt(document.getElementById('cat').style.top);
+            //check if image is in the screen
+            if ((currentLeft == 40) && (currentTop == 380)) {
+
+                //call the moving function on timer
+                if (timerid == null) {
+                    timerid = setInterval("move()", 10);
+                } else {
+                    clearInterval(timerid);
+                    timerid = null;
+                }
+
+            }
+            else {
+
+                return;
+            }
+        }
+
+
+    }
+
+
+    function cat_onclick() {
+
+    }
+
+</script>
+</head>
+<body>
+<div id=container>
+<div class="StarsBar"></div>
+<header><div id="Uppermenu" class="closedMenu" onclick="openmenu()">
+<div id="menuHeader" class="menuOptionsoff">
+<div class="logo"><img src="img/mini-logo.png" /></div>
+<div class="Gametitle"><h1> משחק הפירות של יובל</h1></div>
+<div class="musicMashovBtn"></div>
+<div class="musicBackBtn"></div>
+<div class="fullScreenBtn"><img src="img/full_screen.png" /></div>
+<div class="SettingsBtn"><img src="img/settings.png" />
+<div class="SubMenuSettings">
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+</header>
+<img id="cat" src="" style="position:absolute;left:40px; top:380px" class="movingObgect" onclick="return cat_onclick()" />
+    
+
+</div>
+</body>
+
+</html>
+

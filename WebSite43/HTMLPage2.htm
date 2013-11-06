@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html><head>
+<title>ניסיון_נוסף</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <link href="style/StyleSheet.css" rel="stylesheet" type="text/css" />
+   
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+
+    //Timer 1
+    var timerid = null;
+    //Timer 2
+    var restartTimer = null;
+    var symbols = new Array("baby-laughing-icon.png", "ballons.png", "camel_7-929px.png", "house - icon.png", "Teddy-Bear-XL-psd34058.png");
+    var symbolNum = 0;
+
+
+    //restarting game.
+    function restarting() {
+        document.getElementById('cat').style.left = 40 + 'px';
+        document.getElementById('cat').style.top = 380 + 'px';
+        clearInterval(restartTimer);
+
+        return;
+    }
+
+    function move() {
+
+        var currentLeft = parseInt(document.getElementById('cat').style.left);
+        if (currentLeft > window.innerWidth) {
+            document.getElementById('cat').style.left = parseInt(document.getElementById('cat').style.left) + 30 + "px";
+            clearInterval(timerid);
+            symbolNum = symbolNum + 1;
+            if (symbolNum == 5) {
+                symbolNum = 0;
+            }
+            document.getElementById('cat').src = "symbols/" + symbols[symbolNum];
+
+            restartTimer = setInterval("restarting()", 3000);
+
+            //  document.getElementById('cat').style.left = 5 + 'px';
+            //document.getElementById('cat').style.top = 420 + 'px';
+            // clearInterval(timerid);
+            // return;
+
+        }
+        else {
+
+            document.getElementById('cat').style.left = currentLeft + 3 + 'px';
+
+            document.getElementById('cat').style.top =
+    parseInt(document.getElementById('cat').style.top) + -1 + 'px';
+
+
+        }
+    }
+
+
+    window.onload = function () {
+
+
+   
+
+        //stat moving on click
+        document.getElementById('cat').onclick = function () {
+
+            timerid = null
+            var currentLeft = parseInt(document.getElementById('cat').style.left);
+            var currentTop = parseInt(document.getElementById('cat').style.top);
+            //check if image is in the screen
+            if ((currentLeft == 40) && (currentTop == 380)) {
+
+                //call the moving function on timer
+                if (timerid == null) {
+                    timerid = setInterval("move()", 10);
+                } else {
+                    clearInterval(timerid);
+                    timerid = null;
+                }
+
+            }
+            else {
+
+                return;
+            }
+        }
+
+
+    }
+
+
+</script>
+</head>
+<body>
+<div id=container>
+<div class="StarsBar"></div>
+<header><div id="Uppermenu" class="closedMenu">
+<div class="menuOptions">
+<div class="logo"></div>
+<div class="Gametitle"></div>
+<div class="musicMashovBtn"></div>
+<div class="musicBackBtn"></div>
+<div class="fullScreenBtn"></div>
+<div class="SettingsBtn">
+<div class="SubMenuSettings">
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+</header>
+<img id="cat" src="" style="position:absolute;left:40px; top:380px" class="movingObgect" />
+    
+
+</div>
+</body>
+
+</html>
