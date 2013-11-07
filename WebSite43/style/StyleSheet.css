@@ -778,12 +778,25 @@ footer
     cursor:pointer;
 }
 
+.gameTypeBox.selected {
+    background-color: #c7e8be;
+    color: #159694;
+}
+
+#gameFrame {
+    border:none;
+    overflow:hidden;
+    height:650px;
+    width: 100%;
+}
+
 #myDiv
 {
     min-height:650px;
     background-repeat:repeat-x;
     background-attachment:scroll;
 }
+
 
 .hagdarot_container
 {
@@ -1380,3 +1393,4 @@ color:white;
     0%{ -webkit-transform:rotate(0deg); -webkit-transform-origin:20% 40%; }
     100%{ -webkit-transform:rotate(360deg); }
 }     
+

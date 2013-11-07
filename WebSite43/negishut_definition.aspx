@@ -17,52 +17,21 @@
 
 
      <script type="text/javascript" src="spectrum.js"></script>
-    <script>
-        $(function () {
-            $("#accordion").accordion({
-                collapsible: true
-            });
-        });
-
-        $(function () {
-            $("#accordion").accordion({
-                collapsible: true
-            });
-            $("#showSelectionPaletteStorage").spectrum({
-                showPalette: true,
-                localStorageKey: "spectrum.homepage", // Any picker with the same string will share selection
-                showSelectionPalette: true,
-                palette: []
-            });
-            $("#showSelectionPaletteStorage1").spectrum({
-                showPalette: true,
-                localStorageKey: "spectrum.homepage", // Any picker with the same string will share selection
-                showSelectionPalette: true,
-                palette: []
-            });
-        });
-    </script>
 <script>
-    function loadXMLDoc1() {
-        $(".game2").css({ 'background-color': '#c7e8be', 'color': '#159694' });
-        $(".game1, .game3").css({ 'background-color': 'transparent', 'color': '#c7e8be' });
-        $.get('negishut_Game1.aspx', { section: 'mySection' }, function (data) {
-            $('#myDiv').html(data);
-        });
+    function loadGame1() {
+        $('.gameTypeBox').removeClass('selected');
+        $('.game1').addClass('selected');
+        $('#gameFrame').attr('src', 'negishut_Game1.aspx');
     }
     function loadXMLDoc2() {
-        $(".game2").css({ 'background-color': '#c7e8be', 'color': '#159694' });
-        $(".game1, .game3").css({ 'background-color': 'transparent', 'color': '#c7e8be' });
-        $.get('negishut_Game1.aspx', { section: 'mySection' }, function (data) {
-            $('#myDiv').html(data);
-        });
+        $('.gameTypeBox').removeClass('selected');
+        $('.game2').addClass('selected');
+        $('#gameFrame').attr('src', 'negishut_Game1.aspx');
     }
     function loadXMLDoc3() {
-        $(".game2").css({ 'background-color': '#c7e8be', 'color': '#159694' });
-        $(".game1, .game3").css({ 'background-color': 'transparent', 'color': '#c7e8be' });
-        $.get('negishut_Game1.aspx', { section: 'mySection' }, function (data) {
-            $('#myDiv').html(data);
-        });
+        $('.gameTypeBox').removeClass('selected');
+        $('.game3').addClass('selected');
+        $('#gameFrame').attr('src', 'negishut_Game1.aspx');
     }
 </script>
 </head>
@@ -93,12 +62,12 @@
     <div>
     <div class="ChooseType">
     <div class="holding-box">
-    <div class="one_3_colums"><div class="gameTypeBox game1"><p>איפה אני?</p><img title="איפה אני?" alt="איפה אני?" src="img/negishut/GAME1.png" onclick="loadXMLDoc1()" /></div></div>
+    <div class="one_3_colums"><div class="gameTypeBox game1"><p>איפה אני?</p><img title="איפה אני?" alt="איפה אני?" src="img/negishut/GAME1.png" onclick="loadGame1()" /></div></div>
     <div class="one_3_colums"><div class="gameTypeBox game2"><p>בול פגיעה</p><img title="בול פגיעה" alt="בול פגיעה" src="img/negishut/GAME2.png"  onclick="loadXMLDoc2()"/></div></div>
     <div class="one_3_colums"><div class="gameTypeBox game3"><p>זהה אותי</p><img title="זהה אותי" alt="זהה אותי" src="img/negishut/GAME3.png"  onclick="loadXMLDoc3()"/></div></div>
     </div>
     </div>
-    <div id="myDiv"></div>
+    <iframe src="" id="gameFrame" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
     </div>
     </div>
     </article>
